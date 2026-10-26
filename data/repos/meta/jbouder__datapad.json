@@ -9,12 +9,12 @@
   {
    "name": "TypeScript",
    "color": "#3178c6",
-   "share": 0.9848
+   "share": 0.9847
   },
   {
    "name": "CSS",
    "color": "#663399",
-   "share": 0.0139
+   "share": 0.014
   },
   {
    "name": "HTML",
@@ -24,11 +24,11 @@
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 181,
+ "total_commits": 183,
  "last_commit": {
-  "sha": "850059d",
+  "sha": "fccad8d",
   "date": "2026-10-26",
-  "message": "Tasks: running notes on a task (taskId on Note) (#166)"
+  "message": "Meetings: notes like tasks — one Add note, no Prep/Debrief (#167)"
  },
  "latest_release": null
 }
