@@ -1,0 +1,58 @@
+{
+ "description": "An app designed to assist web developers in their day-to-day duties",
+ "homepage": "https://acolyte.vibeproject.workers.dev/",
+ "created_at": "2025-08-01",
+ "archived": false,
+ "license": "Apache-2.0",
+ "language": "TypeScript",
+ "languages": [
+  {
+   "name": "TypeScript",
+   "color": "#3178c6",
+   "share": 0.9758
+  },
+  {
+   "name": "CSS",
+   "color": "#663399",
+   "share": 0.0214
+  },
+  {
+   "name": "JavaScript",
+   "color": "#f1e05a",
+   "share": 0.0029
+  }
+ ],
+ "topics": [
+  "nextjs",
+  "shadcn-ui",
+  "tailwind",
+  "vercel",
+  "analysis",
+  "api-client",
+  "games",
+  "utilities",
+  "webtool",
+  "apitesting",
+  "base64-encoding",
+  "color-picker",
+  "dependency-analysis",
+  "json-parser",
+  "jsonwebtoken",
+  "jwt",
+  "sse",
+  "websockets",
+  "mermaid",
+  "sbom"
+ ],
+ "default_branch": "main",
+ "total_commits": 584,
+ "last_commit": {
+  "sha": "88a0033",
+  "date": "2026-10-26",
+  "message": "Bump @babel/core from 8.0.7 to 8.0.9 in the babel group (#221)"
+ },
+ "latest_release": {
+  "tag": "1.0.0",
+  "date": "2025-08-31"
+ }
+}

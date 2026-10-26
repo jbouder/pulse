@@ -1,0 +1,63 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'site/**'
+      - 'data/summary.json'
+      - 'data/projects/**'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch: {}   # collect.yml dispatches this after committing data
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+
+jobs:
+  # Jobs cannot be skipped on a secret directly, so this one reads the secret
+  # once and hands the answer to `deploy`. Without CLOUDFLARE_API_TOKEN
+  # (forks, fresh clones) `deploy` is skipped and the run stays green.
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      enabled: ${{ steps.secret.outputs.enabled }}
+    steps:
+      - id: secret
+        env:
+          CF_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          if [ -n "$CF_API_TOKEN" ]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            echo "No CLOUDFLARE_API_TOKEN secret; skipping deploy. See README.md." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+  deploy:
+    needs: gate
+    if: needs.gate.outputs.enabled == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - run: npm ci
+      - run: npm run build
+      - name: Deploy Worker (static assets)
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: site
+          command: deploy

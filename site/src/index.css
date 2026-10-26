@@ -1,0 +1,471 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/oxanium";
+@import "@fontsource-variable/jetbrains-mono";
+
+@custom-variant dark (&:is(.dark *));
+/* Touch screens and other devices that cannot hover: hover reveals never fire. */
+@custom-variant hover-none (@media (hover: none));
+
+/*
+ * Theme: holocron's, by way of datapad. Stock shadcn base-lyra (neutral)
+ * with Oxanium Variable for body AND headings; JetBrains Mono for code and
+ * repo names. Two semantic pairs every theme defines, --warn and --ok, and
+ * a five-step neutral chart ramp, strongest first (see docs/design.md).
+ */
+@theme {
+  /* The one layout breakpoint: rail above, tab bar below. */
+  --breakpoint-desk: 51.25rem;
+}
+
+@theme inline {
+  --font-sans: "Oxanium Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-sans);
+  --font-mono:
+    "JetBrains Mono Variable", ui-monospace, SFMono-Regular, monospace;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-warn: var(--warn);
+  --color-warn-foreground: var(--warn-foreground);
+  --color-ok: var(--ok);
+  --color-ok-foreground: var(--ok-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.53 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.6 0 0);
+  /* Chart ramp, strongest first: one series is --chart-1; heatmap levels
+   * run --chart-5 (least) to --chart-1 (most). */
+  --chart-1: oklch(0.205 0 0);
+  --chart-2: oklch(0.45 0 0);
+  --chart-3: oklch(0.62 0 0);
+  --chart-4: oklch(0.78 0 0);
+  --chart-5: oklch(0.9 0 0);
+  /* Square, to match the base-lyra shadcn components. */
+  --radius: 0px;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+  /* Pointer-tracking glow (spotlight borders). Brighter than --ring so the
+   * edge reads clearly; the light theme darkens instead of washing out. */
+  --fx-glow: oklch(0.42 0 0);
+  /* Quiet repos, partial data. Text-safe on background and card. */
+  --warn: oklch(0.54 0.14 75);
+  --warn-foreground: oklch(0.99 0.01 75);
+  /* Growth, live. */
+  --ok: oklch(0.53 0.13 150);
+  --ok-foreground: oklch(0.99 0.01 150);
+}
+
+.dark {
+  /* Dark: the neutral counterpart of Light (stock shadcn neutral dark),
+   * the same grays inverted, with no tint. */
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.72 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.6 0 0);
+  --chart-1: oklch(0.92 0 0);
+  --chart-2: oklch(0.72 0 0);
+  --chart-3: oklch(0.55 0 0);
+  --chart-4: oklch(0.4 0 0);
+  --chart-5: oklch(0.29 0 0);
+  --sidebar: oklch(0.18 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.922 0 0);
+  --sidebar-primary-foreground: oklch(0.205 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.6 0 0);
+  --fx-glow: oklch(0.75 0 0);
+  /* Quiet repos, partial data. Text-safe on background and card. */
+  --warn: oklch(0.8 0.14 80);
+  --warn-foreground: oklch(0.2 0.04 80);
+  /* Growth, live. */
+  --ok: oklch(0.76 0.14 150);
+  --ok-foreground: oklch(0.2 0.04 150);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    @apply font-sans;
+    scroll-behavior: smooth;
+    color-scheme: light;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    /* Spec type scale: 15px base. rem stays 16px so the stock components
+       keep their sizes. */
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    margin: 0;
+    min-height: 100%;
+  }
+
+  /* Stops live counters and animated readouts from jittering. */
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: var(--border);
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+/* ---- Type scale and density (docs/design.md) ----------------------------- */
+
+:root {
+  --rail-width: 232px;
+  --content-max: 1120px;
+  --row-height: 44px;
+  /* The phone's bottom tab bar, without the safe area under it. */
+  --tabbar-height: 56px;
+}
+@media (min-width: 820px) {
+  :root {
+    --row-height: 36px;
+    --tabbar-height: 0px;
+  }
+}
+
+@layer components {
+  .text-page-title {
+    font-family: var(--font-heading);
+    font-size: 28px;
+    line-height: 1.15;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  @media (min-width: 820px) {
+    .text-page-title {
+      font-size: 34px;
+    }
+  }
+  .text-card-name {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+  /* A project's tagline: the one expressive line on a card or page. */
+  .text-state {
+    font-size: 17px;
+    line-height: 1.35;
+    font-weight: 500;
+    color: var(--muted-foreground);
+  }
+  .text-state-lg {
+    font-size: 22px;
+    line-height: 1.3;
+    font-weight: 500;
+    color: var(--muted-foreground);
+  }
+  /* A headline number on a stat tile. */
+  .text-stat {
+    font-family: var(--font-heading);
+    font-size: 28px;
+    line-height: 1.1;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.01em;
+  }
+  .row {
+    min-height: var(--row-height);
+  }
+}
+/* ------------------------------------------------------------------ */
+/* Motion                                                              */
+/* ------------------------------------------------------------------ */
+
+/* Tokens. Durations and easings are never written as literals in components. */
+:root {
+  --duration-fast: 100ms;
+  --duration-base: 200ms;
+  --duration-slow: 350ms;
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-emphasized: cubic-bezier(0.2, 0, 0, 1);
+  /* --ease-spring-snappy / --ease-spring-bouncy are installed by lib/motion.ts */
+}
+
+/* The preference (Preferences → Motion). One attribute on <html> turns every
+   CSS transition and animation into a cut; the JS helpers check the same flag. */
+html[data-motion="off"] *,
+html[data-motion="off"] *::before,
+html[data-motion="off"] *::after {
+  transition-duration: 0s !important;
+  transition-delay: 0s !important;
+  animation-duration: 0s !important;
+  animation-delay: 0s !important;
+}
+html[data-motion="off"]::view-transition-group(*),
+html[data-motion="off"]::view-transition-old(*),
+html[data-motion="off"]::view-transition-new(*) {
+  animation: none !important;
+}
+
+/* The OS setting is a hard override, independent of the preference. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
+  }
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}
+
+/* Anchor jumps scroll smoothly only while motion is on. */
+html[data-motion="off"] {
+  scroll-behavior: auto;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ---- View transitions -------------------------------------------------- */
+
+/* `withViewTransition()` puts its type on <html data-vt> for the life of the
+   transition, so each element is only snapshotted separately when its own
+   transition is running. Types: page, theme, filter. The root snapshot never
+   animates: everything that should move has a name. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+/* Page changes: the old page lifts out, the new one settles in. The rail,
+   tab bar and top bar stay put (they are outside .page). */
+html[data-vt="page"] .page {
+  view-transition-name: page;
+}
+::view-transition-old(page) {
+  animation: page-out var(--duration-base) var(--ease-standard) both;
+}
+::view-transition-new(page) {
+  animation: page-in var(--duration-slow) var(--ease-emphasized) both;
+}
+@keyframes page-out {
+  to {
+    opacity: 0;
+    translate: 0 -12px;
+  }
+}
+@keyframes page-in {
+  from {
+    opacity: 0;
+    translate: 0 12px;
+  }
+}
+
+/* Filter, group-by and layout changes: the list crossfades on its own
+   snapshot while the toolbar holds. Items that exist in both states can
+   carry their own names (FLIP covers the rest). */
+html[data-vt="filter"] .vt-list {
+  view-transition-name: list;
+}
+::view-transition-old(list),
+::view-transition-new(list) {
+  animation-duration: var(--duration-slow);
+  animation-timing-function: var(--ease-emphasized);
+}
+
+/* Theme changes: the whole page is one snapshot; the new one fades in. */
+html[data-vt="theme"]::view-transition-new(root) {
+  animation: theme-fade var(--duration-base) var(--ease-standard) both;
+}
+@keyframes theme-fade {
+  from {
+    opacity: 0;
+  }
+}
+
+/* ---- Entrances ---------------------------------------------------------- */
+
+/* List rows and cards arriving. `--i` (optional, inline) staggers a group.
+   The transition covers only these two properties so the delay cannot leak
+   into hover states. */
+.enter {
+  opacity: 1;
+  translate: 0 0;
+  transition:
+    opacity var(--duration-slow) var(--ease-emphasized),
+    translate var(--duration-slow) var(--ease-emphasized);
+  transition-delay: calc(var(--i, 0) * 40ms);
+}
+@starting-style {
+  .enter {
+    opacity: 0;
+    translate: 0 8px;
+  }
+}
+
+/* Press feedback on anything interactive. */
+.press {
+  transition-property: scale, color, background-color, border-color, opacity;
+  transition-duration: var(--duration-fast);
+  transition-timing-function: var(--ease-standard);
+}
+.press:active {
+  scale: 0.96;
+}
+
+/* ---- Charts ------------------------------------------------------------- */
+
+/* Recharts draws SVG text and grid lines with its own defaults; these put
+   them on the theme's tokens so both themes read the same way. */
+.chart .recharts-cartesian-axis-tick-value {
+  fill: var(--muted-foreground);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+.chart .recharts-cartesian-grid line {
+  stroke: var(--border);
+}
+.chart .recharts-surface {
+  overflow: visible;
+}
+.chart .recharts-rectangle.recharts-tooltip-cursor {
+  fill: var(--muted);
+}
+.chart :focus {
+  outline: none;
+}
+
+/* The activity grid: one square per day, five levels on the chart ramp.
+   Level 0 is a day with no commits, drawn on --muted so the grid shape
+   still reads. */
+.heat {
+  fill: var(--muted);
+}
+.heat[data-level="1"] {
+  fill: var(--chart-4);
+}
+.heat[data-level="2"] {
+  fill: var(--chart-3);
+}
+.heat[data-level="3"] {
+  fill: var(--chart-2);
+}
+.heat[data-level="4"] {
+  fill: var(--chart-1);
+}
+.heat:focus-visible,
+.heat:hover {
+  stroke: var(--foreground);
+  stroke-width: 1.5px;
+  outline: none;
+}

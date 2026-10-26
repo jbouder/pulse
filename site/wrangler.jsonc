@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "pulse",
+  "compatibility_date": "2026-10-01",
+  // Static assets only: no script. The built site and the collector's JSON
+  // under dist/data are the whole deploy. Client-side routes
+  // (/projects/holocron) fall through to index.html.
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
+  },
+  "observability": { "enabled": true }
+}

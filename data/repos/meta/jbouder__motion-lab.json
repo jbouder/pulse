@@ -1,0 +1,34 @@
+{
+ "description": "A playground for experimenting with motion and transitions",
+ "homepage": "https://jbouder.github.io/motion-lab/",
+ "created_at": "2026-07-28",
+ "archived": false,
+ "license": null,
+ "language": "TypeScript",
+ "languages": [
+  {
+   "name": "TypeScript",
+   "color": "#3178c6",
+   "share": 0.9184
+  },
+  {
+   "name": "CSS",
+   "color": "#663399",
+   "share": 0.0804
+  },
+  {
+   "name": "HTML",
+   "color": "#e34c26",
+   "share": 0.0012
+  }
+ ],
+ "topics": [],
+ "default_branch": "main",
+ "total_commits": 12,
+ "last_commit": {
+  "sha": "abaea3b",
+  "date": "2026-07-28",
+  "message": "Misc cleanup."
+ },
+ "latest_release": null
+}

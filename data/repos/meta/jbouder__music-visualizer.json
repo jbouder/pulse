@@ -1,0 +1,39 @@
+{
+ "description": "Browser music visualizer: MilkDrop presets, WebGL 2 shader scenes and retro Canvas 2D effects",
+ "homepage": "https://jbouder.github.io/music-visualizer/",
+ "created_at": "2026-10-17",
+ "archived": false,
+ "license": null,
+ "language": "TypeScript",
+ "languages": [
+  {
+   "name": "TypeScript",
+   "color": "#3178c6",
+   "share": 0.8001
+  },
+  {
+   "name": "CSS",
+   "color": "#663399",
+   "share": 0.1362
+  },
+  {
+   "name": "GLSL",
+   "color": "#5686a5",
+   "share": 0.0622
+  },
+  {
+   "name": "HTML",
+   "color": "#e34c26",
+   "share": 0.0015
+  }
+ ],
+ "topics": [],
+ "default_branch": "main",
+ "total_commits": 18,
+ "last_commit": {
+  "sha": "0f962a7",
+  "date": "2026-10-17",
+  "message": "Add a 10-band equalizer window and a screensaver mode"
+ },
+ "latest_release": null
+}

@@ -1,0 +1,224 @@
+# sources.yaml - what Pulse tracks.
+#
+# Every project is one GitHub repo, plus the words the dashboard shows
+# about it. The collector reads `repo` and `workers`; everything else is
+# copy for the project page. Adding a project here is the moment it
+# appears on the dashboard.
+#
+#   id        stable, used in URLs (/projects/<id>)
+#   name      display name
+#   repo      owner/name on GitHub
+#   group     one of the ids under `groups`
+#   featured  shown first on the overview
+#   tagline   one line, sentence case, no trailing period
+#   about     a short paragraph: what it is and why it exists
+#   stack     the main pieces, most important first
+#   links     app, docs, demo, … (the repo link is implied)
+#   workers   Cloudflare Worker script names whose requests count as the
+#             project's app traffic (needs CLOUDFLARE_ANALYTICS_TOKEN and
+#             CLOUDFLARE_ACCOUNT_ID; skipped with a note otherwise)
+
+owner: jbouder
+
+groups:
+  - id: apps
+    name: Apps
+  - id: agents
+    name: Claude Code
+  - id: labs
+    name: Labs
+
+projects:
+  - id: holocron
+    name: Holocron
+    repo: jbouder/holocron
+    group: apps
+    featured: true
+    tagline: The retro board that doesn’t keep your retros
+    about: >-
+      No accounts, no history, no archive. Create a board, share the
+      six-character code and run the retro together: write, vote, discuss.
+      Every board is a SQLite-backed Durable Object that pushes live updates
+      over WebSockets and erases itself every morning.
+    stack: [React 19, Vite, Cloudflare Workers, Durable Objects, WebSockets]
+    links:
+      app: https://holocron.vibeproject.workers.dev/
+    workers: [holocron]
+
+  - id: datapad
+    name: Datapad
+    repo: jbouder/datapad
+    group: apps
+    featured: true
+    tagline: A private project tracker for an engineering leader
+    about: >-
+      Projects, tasks, notes, meetings, milestones and people in one place,
+      with cross-project views, search and summaries that run on your own
+      device. Holocron’s sibling: the same stack, look and quality bar, but
+      it keeps your data and only you can reach it, behind Cloudflare Access.
+    stack: [React 19, Vite, Cloudflare Workers, Durable Objects, WebLLM]
+    links:
+      app: https://datapad.vibeproject.workers.dev/
+    workers: [datapad]
+
+  - id: holotable
+    name: Holotable
+    repo: jbouder/holotable
+    group: apps
+    featured: true
+    tagline: Natural-language monitoring dashboards
+    about: >-
+      Describe what you want to see and a language model authors a validated
+      visualization spec (SQL and chart config), never the data itself.
+      Holotable runs the guarded SQL against TimescaleDB and streams results
+      live; Prometheus-compatible endpoints are sources too.
+    stack: [Next.js 16, React 19, TimescaleDB, AI SDK, Keycloak]
+    links:
+      docs: https://holotable-docs.vibeproject.workers.dev/
+      demo: https://holotable-demo.vibeproject.workers.dev/
+    workers: [holotable-docs, holotable-demo]
+
+  - id: acolyte
+    name: Acolyte
+    repo: jbouder/acolyte
+    group: apps
+    featured: true
+    tagline: A toolbox for web developers’ day-to-day work
+    about: >-
+      API and WebSocket clients, SSE, JWT and Base64 tools, a JSON parser,
+      Mermaid, SBOM and dependency analysis, a color picker and a few games,
+      in one app. The everyday utilities, without a dozen browser tabs.
+    stack: [Next.js, React, shadcn/ui, Tailwind CSS, Cloudflare Workers]
+    links:
+      app: https://acolyte.vibeproject.workers.dev/
+    workers: [acolyte]
+
+  - id: website
+    name: johnnybouder.com
+    repo: jbouder/website
+    group: apps
+    featured: true
+    tagline: A terminal-themed personal site with an assistant that answers
+    about: >-
+      Johnny Bouder’s portfolio: work, resume and socials from one data
+      file, rendered server-side at the edge. The `>_ ask` launcher opens a
+      chatbot that answers questions about Johnny from the same content.
+    stack: [TanStack Start, React 19, Tailwind CSS, Cloudflare Workers]
+    links:
+      app: https://www.johnnybouder.com
+    workers: [website]
+
+  - id: music-visualizer
+    name: Music Visualizer
+    repo: jbouder/music-visualizer
+    group: apps
+    featured: true
+    tagline: A 2000s media-player visualizer in the browser
+    about: >-
+      A classic player window with a seven-segment clock over full-screen
+      visuals: 23 scenes plus every bundled MilkDrop preset, each with a
+      retro Canvas 2D counterpart. A static site, no backend, no accounts.
+    stack: [TypeScript, WebGL 2, MilkDrop, Canvas 2D, GitHub Pages]
+    links:
+      app: https://jbouder.github.io/music-visualizer/
+
+  - id: punchlist
+    name: Punchlist
+    repo: jbouder/punchlist
+    group: apps
+    tagline: A team task tracker with one switch for every transition
+    about: >-
+      Built as the live demo for the talk “Modern Web Motion: Advanced
+      Techniques, Everyday UI”. With motion on, it uses the platform’s
+      current motion features; with motion off, every change is a cut, so
+      you can judge what the motion is telling you.
+    stack: [React, View Transitions, WAAPI, GitHub Pages]
+    links:
+      app: https://jbouder.github.io/punchlist/
+
+  - id: skills
+    name: Skills
+    repo: jbouder/skills
+    group: agents
+    featured: true
+    tagline: Coding-agent skills for scaffolding, conventions and review
+    about: >-
+      Claude Code skills that install into ~/.claude/skills: new-project
+      scaffolds, frontend, backend and Kubernetes conventions, PR review,
+      accessibility and web-app audits, talk decks and tool evaluations.
+    stack: [Claude Code, Agent Skills, Markdown]
+
+  - id: claude-plugins
+    name: Claude plugins
+    repo: jbouder/claude-plugins
+    group: agents
+    featured: true
+    tagline: A personal Claude Code plugin marketplace
+    about: >-
+      Add the marketplace once and install any plugin from it: skills-sync
+      keeps ~/.claude/skills in step with the repos your skills came from,
+      and standup keeps a zero-token work journal that writes your
+      yesterday and today.
+    stack: [Claude Code, Plugins, Hooks, Node.js]
+
+  - id: jean-claude
+    name: Jean-Claude
+    repo: jbouder/jean-claude
+    group: agents
+    tagline: A Claude Code plugin with maximum impact
+    about: >-
+      The Muscles from Brussels for your local environment: kill processes
+      and containers, regenerate a clean tree, split documents, and enter
+      the Kumite. No retreat, no surrender.
+    stack: [Claude Code, Plugins, Skills, Agents]
+
+  - id: agent-quest
+    name: Agent Quest
+    repo: jbouder/agent-quest
+    group: agents
+    featured: true
+    tagline: A Zelda-style control room for Claude Code agents
+    about: >-
+      Your repo is a village and your agents are villagers. Every NPC is a
+      real Claude Code session: walk up to steer one, tap to interrupt, and
+      watch its context window drain like a health bar.
+    stack: [Phaser 3, React 19, Claude Agent SDK]
+
+  - id: chaos-lab
+    name: Chaos Lab
+    repo: jbouder/chaos-lab
+    group: labs
+    tagline: Break a web app on purpose; an on-device assistant helps fix it
+    about: >-
+      Inject faults into Meridian, a small freight console backed by Mock
+      Service Worker, and Dispatch, a model running locally on WebGPU,
+      notices, explains and walks you through the fix. Nothing about an
+      incident leaves the machine.
+    stack: [React, WebLLM, WebGPU, Mock Service Worker]
+
+  - id: motion-lab
+    name: Motion Lab
+    repo: jbouder/motion-lab
+    group: labs
+    tagline: A playground for UI transitions and motion
+    about: >-
+      53 togglable, tunable effects across eight categories: page
+      transitions on the View Transitions API, component motion, scroll and
+      text effects, particles and physics, and a retro wing.
+    stack: [React, View Transitions, three.js, Canvas]
+    links:
+      app: https://jbouder.github.io/motion-lab/
+
+  - id: pulse
+    name: Pulse
+    repo: jbouder/pulse
+    group: labs
+    tagline: Health and activity across these projects
+    about: >-
+      This dashboard. A daily GitHub Action snapshots each repo’s activity,
+      stars, releases and traffic, plus Worker requests from Cloudflare, and
+      commits the results as CSV, so the repo is the database.
+    stack: [Python, React 19, Vite, Recharts, Cloudflare Workers]
+    links:
+      app: https://pulse.vibeproject.workers.dev/
+    workers: [pulse]

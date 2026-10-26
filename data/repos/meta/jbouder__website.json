@@ -1,0 +1,29 @@
+{
+ "description": "My Personal Website",
+ "homepage": "https://www.johnnybouder.com",
+ "created_at": "2026-08-07",
+ "archived": false,
+ "license": null,
+ "language": "TypeScript",
+ "languages": [
+  {
+   "name": "TypeScript",
+   "color": "#3178c6",
+   "share": 0.8459
+  },
+  {
+   "name": "CSS",
+   "color": "#663399",
+   "share": 0.1541
+  }
+ ],
+ "topics": [],
+ "default_branch": "main",
+ "total_commits": 24,
+ "last_commit": {
+  "sha": "738b0d9",
+  "date": "2026-10-26",
+  "message": "Swap motion-lab and agent-quest for holocron and datapad in selected work (#1)"
+ },
+ "latest_release": null
+}

@@ -1,0 +1,34 @@
+{
+ "description": "A retro board that doesn’t archive your retros",
+ "homepage": "https://holocron.vibeproject.workers.dev/",
+ "created_at": "2026-10-02",
+ "archived": false,
+ "license": "MIT",
+ "language": "TypeScript",
+ "languages": [
+  {
+   "name": "TypeScript",
+   "color": "#3178c6",
+   "share": 0.9651
+  },
+  {
+   "name": "CSS",
+   "color": "#663399",
+   "share": 0.0307
+  },
+  {
+   "name": "HTML",
+   "color": "#e34c26",
+   "share": 0.0041
+  }
+ ],
+ "topics": [],
+ "default_branch": "main",
+ "total_commits": 147,
+ "last_commit": {
+  "sha": "0aeddb0",
+  "date": "2026-10-18",
+  "message": "Fix the WCAG 2.2 AA findings from the accessibility audit (#101)"
+ },
+ "latest_release": null
+}
