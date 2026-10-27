@@ -9,21 +9,21 @@
   {
    "name": "TypeScript",
    "color": "#3178c6",
-   "share": 0.8459
+   "share": 0.8463
   },
   {
    "name": "CSS",
    "color": "#663399",
-   "share": 0.1541
+   "share": 0.1537
   }
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 24,
+ "total_commits": 30,
  "last_commit": {
-  "sha": "738b0d9",
+  "sha": "067ae85",
   "date": "2026-10-26",
-  "message": "Swap motion-lab and agent-quest for holocron and datapad in selected work (#1)"
+  "message": "Move acolyte to just before pulse in selected work (#4)"
  },
  "latest_release": null
 }
