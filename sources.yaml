@@ -122,20 +122,6 @@ projects:
     links:
       app: https://jbouder.github.io/music-visualizer/
 
-  - id: punchlist
-    name: Punchlist
-    repo: jbouder/punchlist
-    group: apps
-    tagline: A team task tracker with one switch for every transition
-    about: >-
-      Built as the live demo for the talk “Modern Web Motion: Advanced
-      Techniques, Everyday UI”. With motion on, it uses the platform’s
-      current motion features; with motion off, every change is a cut, so
-      you can judge what the motion is telling you.
-    stack: [React, View Transitions, WAAPI, GitHub Pages]
-    links:
-      app: https://jbouder.github.io/punchlist/
-
   - id: skills
     name: Skills
     repo: jbouder/skills

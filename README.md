@@ -21,7 +21,7 @@ Every project in [`sources.yaml`](sources.yaml), in three groups:
 
 | Group | Projects |
 |---|---|
-| Apps | Holocron, Datapad, Holotable, Acolyte, johnnybouder.com, Music Visualizer, Punchlist |
+| Apps | Holocron, Datapad, Holotable, Acolyte, johnnybouder.com, Music Visualizer |
 | Claude Code | Skills, Claude plugins, Jean-Claude, Agent Quest |
 | Labs | Chaos Lab, Motion Lab, Pulse |
 
