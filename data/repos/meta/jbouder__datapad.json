@@ -9,12 +9,12 @@
   {
    "name": "TypeScript",
    "color": "#3178c6",
-   "share": 0.9871
+   "share": 0.9875
   },
   {
    "name": "CSS",
    "color": "#663399",
-   "share": 0.012
+   "share": 0.0116
   },
   {
    "name": "HTML",
@@ -24,11 +24,11 @@
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 275,
+ "total_commits": 277,
  "last_commit": {
-  "sha": "e380d8b",
-  "date": "2026-10-27",
-  "message": "MCP: read tools over the shared selectors (#216)"
+  "sha": "d516e53",
+  "date": "2026-10-28",
+  "message": "MCP: write tools through apply() and reduce(), and Settings → Connected apps (#217)"
  },
  "latest_release": {
   "tag": "v0.1.0",
