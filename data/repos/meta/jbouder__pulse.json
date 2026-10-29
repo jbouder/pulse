@@ -29,11 +29,11 @@
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 6,
+ "total_commits": 7,
  "last_commit": {
-  "sha": "34ff02d",
+  "sha": "4852b84",
   "date": "2026-10-28",
-  "message": "feat: stop tracking punchlist (#1)"
+  "message": "data: collect 2026-10-28"
  },
  "latest_release": null
 }

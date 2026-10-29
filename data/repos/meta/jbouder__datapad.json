@@ -9,26 +9,26 @@
   {
    "name": "TypeScript",
    "color": "#3178c6",
-   "share": 0.9875
+   "share": 0.9882
   },
   {
    "name": "CSS",
    "color": "#663399",
-   "share": 0.0116
+   "share": 0.0106
   },
   {
    "name": "HTML",
    "color": "#e34c26",
-   "share": 0.0009
+   "share": 0.0012
   }
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 277,
+ "total_commits": 342,
  "last_commit": {
-  "sha": "d516e53",
-  "date": "2026-10-28",
-  "message": "MCP: write tools through apply() and reduce(), and Settings → Connected apps (#217)"
+  "sha": "94767af",
+  "date": "2026-10-29",
+  "message": "Focus: Brief me, an on-device summary of yesterday and today (#259)"
  },
  "latest_release": {
   "tag": "v0.1.0",
