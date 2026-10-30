@@ -29,11 +29,11 @@
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 7,
+ "total_commits": 8,
  "last_commit": {
-  "sha": "4852b84",
-  "date": "2026-10-28",
-  "message": "data: collect 2026-10-28"
+  "sha": "7515a5e",
+  "date": "2026-10-29",
+  "message": "data: collect 2026-10-29"
  },
  "latest_release": null
 }

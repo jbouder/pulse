@@ -24,11 +24,11 @@
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 342,
+ "total_commits": 376,
  "last_commit": {
-  "sha": "94767af",
-  "date": "2026-10-29",
-  "message": "Focus: Brief me, an on-device summary of yesterday and today (#259)"
+  "sha": "35c4807",
+  "date": "2026-10-30",
+  "message": "Fix the task selection bar's position and control heights on phones (#282)"
  },
  "latest_release": {
   "tag": "v0.1.0",
