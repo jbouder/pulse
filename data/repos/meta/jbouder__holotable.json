@@ -44,11 +44,11 @@
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 930,
+ "total_commits": 969,
  "last_commit": {
-  "sha": "f631480",
-  "date": "2026-10-27",
-  "message": "chore: prepare the 0.3.0 release (#679)"
+  "sha": "913cf6e",
+  "date": "2026-10-31",
+  "message": "a11y: move and resize a panel with clicks alone (#681)"
  },
  "latest_release": {
   "tag": "v0.3.0",

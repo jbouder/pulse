@@ -9,26 +9,26 @@
   {
    "name": "TypeScript",
    "color": "#3178c6",
-   "share": 0.9651
+   "share": 0.9639
   },
   {
    "name": "CSS",
    "color": "#663399",
-   "share": 0.0307
+   "share": 0.0321
   },
   {
    "name": "HTML",
    "color": "#e34c26",
-   "share": 0.0041
+   "share": 0.004
   }
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 147,
+ "total_commits": 163,
  "last_commit": {
-  "sha": "0aeddb0",
-  "date": "2026-10-18",
-  "message": "Fix the WCAG 2.2 AA findings from the accessibility audit (#101)"
+  "sha": "20970c8",
+  "date": "2026-10-30",
+  "message": "Add two screenshots to the README (#114)"
  },
  "latest_release": null
 }

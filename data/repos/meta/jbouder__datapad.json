@@ -9,12 +9,12 @@
   {
    "name": "TypeScript",
    "color": "#3178c6",
-   "share": 0.9882
+   "share": 0.9883
   },
   {
    "name": "CSS",
    "color": "#663399",
-   "share": 0.0106
+   "share": 0.0105
   },
   {
    "name": "HTML",
@@ -24,14 +24,14 @@
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 376,
+ "total_commits": 395,
  "last_commit": {
-  "sha": "35c4807",
+  "sha": "9bf82b4",
   "date": "2026-10-30",
-  "message": "Fix the task selection bar's position and control heights on phones (#282)"
+  "message": "Release 0.3.0 (#291)"
  },
  "latest_release": {
-  "tag": "v0.1.0",
-  "date": "2026-10-27"
+  "tag": "v0.3.0",
+  "date": "2026-10-30"
  }
 }

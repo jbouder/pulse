@@ -34,11 +34,11 @@
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 38,
+ "total_commits": 40,
  "last_commit": {
-  "sha": "8a66881",
-  "date": "2026-10-19",
-  "message": "Update formatting in SKILL.md description"
+  "sha": "e782384",
+  "date": "2026-10-31",
+  "message": "new-project: scaffold an ACCESSIBILITY.md for layouts with a UI (#4)"
  },
  "latest_release": null
 }
