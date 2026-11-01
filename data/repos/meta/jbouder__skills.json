@@ -9,36 +9,36 @@
   {
    "name": "HTML",
    "color": "#e34c26",
-   "share": 0.5201
+   "share": 0.4989
   },
   {
    "name": "JavaScript",
    "color": "#f1e05a",
-   "share": 0.3489
+   "share": 0.3347
   },
   {
    "name": "Shell",
    "color": "#89e051",
-   "share": 0.0936
+   "share": 0.0898
   },
   {
    "name": "Python",
    "color": "#3572A5",
-   "share": 0.0364
+   "share": 0.0756
   },
   {
    "name": "CSS",
    "color": "#663399",
-   "share": 0.001
+   "share": 0.0009
   }
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 40,
+ "total_commits": 42,
  "last_commit": {
-  "sha": "e782384",
+  "sha": "4b113d0",
   "date": "2026-10-31",
-  "message": "new-project: scaffold an ACCESSIBILITY.md for layouts with a UI (#4)"
+  "message": "new-project: add the --vibe layout (#5)"
  },
  "latest_release": null
 }
