@@ -29,11 +29,11 @@
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 11,
+ "total_commits": 12,
  "last_commit": {
-  "sha": "b317666",
-  "date": "2026-10-31",
-  "message": "data: delete orphaned punchlist meta (#2)"
+  "sha": "78e6be3",
+  "date": "2026-11-01",
+  "message": "data: collect 2026-11-01"
  },
  "latest_release": null
 }
