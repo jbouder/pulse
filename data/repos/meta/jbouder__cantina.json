@@ -9,27 +9,27 @@
   {
    "name": "Rust",
    "color": "#dea584",
-   "share": 0.6663
+   "share": 0.6694
   },
   {
    "name": "TypeScript",
    "color": "#3178c6",
-   "share": 0.294
+   "share": 0.2913
   },
   {
    "name": "CSS",
    "color": "#663399",
-   "share": 0.0187
+   "share": 0.0185
   },
   {
    "name": "GLSL",
    "color": "#5686a5",
-   "share": 0.0124
+   "share": 0.0123
   },
   {
    "name": "JavaScript",
    "color": "#f1e05a",
-   "share": 0.0061
+   "share": 0.006
   },
   {
    "name": "Shell",
@@ -44,11 +44,11 @@
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 65,
+ "total_commits": 68,
  "last_commit": {
-  "sha": "b6e5261",
+  "sha": "06b9f8b",
   "date": "2026-11-03",
-  "message": "Docs search moves to the right of the header (#141)"
+  "message": "JSON Schemas for patterns and projects, all four in schemas/ (#144)"
  },
  "latest_release": null
 }
