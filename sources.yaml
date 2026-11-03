@@ -122,6 +122,22 @@ projects:
     links:
       app: https://jbouder.github.io/music-visualizer/
 
+  - id: cantina
+    name: Cantina
+    repo: jbouder/cantina
+    group: apps
+    featured: true
+    tagline: A Mac desktop studio for guitar and bass players
+    about: >-
+      Plug in and play through a pedal chain with no perceptible delay,
+      layer tracks, build drum beats, run Audio Unit and CLAP plugins and
+      design your own pedals as graphs of DSP primitives, all on a stage of
+      music visualizer scenes.
+    stack: [Rust, Tauri, React 19, Vite, Audio Units, CLAP]
+    links:
+      docs: https://cantina-docs.vibeproject.workers.dev/
+    workers: [cantina-docs]
+
   - id: skills
     name: Skills
     repo: jbouder/skills
