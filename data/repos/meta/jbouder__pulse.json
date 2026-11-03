@@ -29,11 +29,11 @@
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 12,
+ "total_commits": 14,
  "last_commit": {
-  "sha": "78e6be3",
-  "date": "2026-11-01",
-  "message": "data: collect 2026-11-01"
+  "sha": "4f27fe3",
+  "date": "2026-11-03",
+  "message": "feat: track Cantina and its docs"
  },
  "latest_release": null
 }

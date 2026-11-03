@@ -1,0 +1,54 @@
+{
+ "description": "A place to make music…and villainy",
+ "homepage": "https://cantina-docs.vibeproject.workers.dev/",
+ "created_at": "2026-10-31",
+ "archived": false,
+ "license": "MIT",
+ "language": "Rust",
+ "languages": [
+  {
+   "name": "Rust",
+   "color": "#dea584",
+   "share": 0.6663
+  },
+  {
+   "name": "TypeScript",
+   "color": "#3178c6",
+   "share": 0.294
+  },
+  {
+   "name": "CSS",
+   "color": "#663399",
+   "share": 0.0187
+  },
+  {
+   "name": "GLSL",
+   "color": "#5686a5",
+   "share": 0.0124
+  },
+  {
+   "name": "JavaScript",
+   "color": "#f1e05a",
+   "share": 0.0061
+  },
+  {
+   "name": "Shell",
+   "color": "#89e051",
+   "share": 0.0021
+  },
+  {
+   "name": "HTML",
+   "color": "#e34c26",
+   "share": 0.0004
+  }
+ ],
+ "topics": [],
+ "default_branch": "main",
+ "total_commits": 65,
+ "last_commit": {
+  "sha": "b6e5261",
+  "date": "2026-11-03",
+  "message": "Docs search moves to the right of the header (#141)"
+ },
+ "latest_release": null
+}

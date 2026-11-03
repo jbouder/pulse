@@ -45,11 +45,11 @@
   "sbom"
  ],
  "default_branch": "main",
- "total_commits": 584,
+ "total_commits": 588,
  "last_commit": {
-  "sha": "88a0033",
-  "date": "2026-10-26",
-  "message": "Bump @babel/core from 8.0.7 to 8.0.9 in the babel group (#221)"
+  "sha": "4d168fd",
+  "date": "2026-11-02",
+  "message": "Bump the minor-and-patch group across 1 directory with 8 updates (#223)"
  },
  "latest_release": {
   "tag": "1.0.0",
