@@ -9,36 +9,36 @@
   {
    "name": "HTML",
    "color": "#e34c26",
-   "share": 0.4989
+   "share": 0.5812
   },
   {
    "name": "JavaScript",
    "color": "#f1e05a",
-   "share": 0.3347
-  },
-  {
-   "name": "Shell",
-   "color": "#89e051",
-   "share": 0.0898
+   "share": 0.2392
   },
   {
    "name": "Python",
    "color": "#3572A5",
-   "share": 0.0756
+   "share": 0.1148
+  },
+  {
+   "name": "Shell",
+   "color": "#89e051",
+   "share": 0.0641
   },
   {
    "name": "CSS",
    "color": "#663399",
-   "share": 0.0009
+   "share": 0.0007
   }
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 42,
+ "total_commits": 45,
  "last_commit": {
-  "sha": "4b113d0",
-  "date": "2026-10-31",
-  "message": "new-project: add the --vibe layout (#5)"
+  "sha": "d27d826",
+  "date": "2026-11-05",
+  "message": "docs(readme): fix skills install agent name and add global flag"
  },
  "latest_release": null
 }
