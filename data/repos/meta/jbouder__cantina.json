@@ -9,32 +9,32 @@
   {
    "name": "Rust",
    "color": "#dea584",
-   "share": 0.6862
+   "share": 0.6821
   },
   {
    "name": "TypeScript",
    "color": "#3178c6",
-   "share": 0.2741
+   "share": 0.2794
   },
   {
    "name": "CSS",
    "color": "#663399",
-   "share": 0.0165
+   "share": 0.016
   },
   {
    "name": "GLSL",
    "color": "#5686a5",
-   "share": 0.0109
+   "share": 0.0106
   },
   {
    "name": "JavaScript",
    "color": "#f1e05a",
-   "share": 0.0089
+   "share": 0.0087
   },
   {
    "name": "Shell",
    "color": "#89e051",
-   "share": 0.0031
+   "share": 0.003
   },
   {
    "name": "HTML",
@@ -44,11 +44,11 @@
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 77,
+ "total_commits": 82,
  "last_commit": {
-  "sha": "38a3ca6",
-  "date": "2026-11-03",
-  "message": "Contributing guide, issue and pull request templates, version 0.1.0 (#153)"
+  "sha": "868922a",
+  "date": "2026-11-06",
+  "message": "feat(engine): four-beat count-in, clip trim handles and a clip menu (#163)"
  },
  "latest_release": null
 }
