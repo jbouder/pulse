@@ -9,46 +9,51 @@
   {
    "name": "Rust",
    "color": "#dea584",
-   "share": 0.6821
+   "share": 0.6868
   },
   {
    "name": "TypeScript",
    "color": "#3178c6",
-   "share": 0.2794
+   "share": 0.2799
   },
   {
    "name": "CSS",
    "color": "#663399",
-   "share": 0.016
+   "share": 0.0127
   },
   {
    "name": "GLSL",
    "color": "#5686a5",
-   "share": 0.0106
+   "share": 0.0081
   },
   {
    "name": "JavaScript",
    "color": "#f1e05a",
-   "share": 0.0087
+   "share": 0.0066
+  },
+  {
+   "name": "Python",
+   "color": "#3572A5",
+   "share": 0.0034
   },
   {
    "name": "Shell",
    "color": "#89e051",
-   "share": 0.003
+   "share": 0.0023
   },
   {
    "name": "HTML",
    "color": "#e34c26",
-   "share": 0.0003
+   "share": 0.0002
   }
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 82,
+ "total_commits": 104,
  "last_commit": {
-  "sha": "868922a",
-  "date": "2026-11-06",
-  "message": "feat(engine): four-beat count-in, clip trim handles and a clip menu (#163)"
+  "sha": "46df1b5",
+  "date": "2026-11-09",
+  "message": "feat(tabs): play a tab back and practise with it (#176) (#232)"
  },
  "latest_release": null
 }
