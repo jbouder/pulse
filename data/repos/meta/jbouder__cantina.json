@@ -9,37 +9,37 @@
   {
    "name": "Rust",
    "color": "#dea584",
-   "share": 0.6868
+   "share": 0.6792
   },
   {
    "name": "TypeScript",
    "color": "#3178c6",
-   "share": 0.2799
+   "share": 0.2939
   },
   {
    "name": "CSS",
    "color": "#663399",
-   "share": 0.0127
+   "share": 0.0102
   },
   {
    "name": "GLSL",
    "color": "#5686a5",
-   "share": 0.0081
+   "share": 0.0065
   },
   {
    "name": "JavaScript",
    "color": "#f1e05a",
-   "share": 0.0066
+   "share": 0.0053
   },
   {
    "name": "Python",
    "color": "#3572A5",
-   "share": 0.0034
+   "share": 0.0027
   },
   {
    "name": "Shell",
    "color": "#89e051",
-   "share": 0.0023
+   "share": 0.002
   },
   {
    "name": "HTML",
@@ -49,11 +49,11 @@
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 104,
+ "total_commits": 130,
  "last_commit": {
-  "sha": "46df1b5",
-  "date": "2026-11-09",
-  "message": "feat(tabs): play a tab back and practise with it (#176) (#232)"
+  "sha": "2a2a3a9",
+  "date": "2026-11-10",
+  "message": "docs: the pitch pedal and drive blend in the README, home page and screenshots (#260)"
  },
  "latest_release": null
 }
