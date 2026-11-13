@@ -9,37 +9,37 @@
   {
    "name": "Rust",
    "color": "#dea584",
-   "share": 0.6674
+   "share": 0.6499
   },
   {
    "name": "TypeScript",
    "color": "#3178c6",
-   "share": 0.2999
+   "share": 0.3212
   },
   {
    "name": "CSS",
    "color": "#663399",
-   "share": 0.0136
+   "share": 0.0118
   },
   {
    "name": "JavaScript",
    "color": "#f1e05a",
-   "share": 0.0069
+   "share": 0.0061
   },
   {
    "name": "GLSL",
    "color": "#5686a5",
-   "share": 0.0063
+   "share": 0.0055
   },
   {
    "name": "Shell",
    "color": "#89e051",
-   "share": 0.0031
+   "share": 0.003
   },
   {
    "name": "Python",
    "color": "#3572A5",
-   "share": 0.0026
+   "share": 0.0023
   },
   {
    "name": "HTML",
@@ -49,11 +49,11 @@
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 145,
+ "total_commits": 161,
  "last_commit": {
-  "sha": "6b9430e",
+  "sha": "ff7f97a",
   "date": "2026-11-12",
-  "message": "docs: a professional README, and M20 Practice and M21 Drum designer in the plan (#305)"
+  "message": "docs: the drum designer guide, with screenshots, and in the README (#322)"
  },
  "latest_release": null
 }
