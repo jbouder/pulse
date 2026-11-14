@@ -59,6 +59,11 @@ Holocron’s and datapad’s, carried over:
   text pair drops below 4.5:1 or a chart color below 3:1 on a card.
 - Oxanium for UI and headings, JetBrains Mono for repo names, tags and
   SHAs. Square corners (base-lyra). Phosphor icons.
+  `site/src/components/ui` comes from the
+  [Beskar](https://github.com/jbouder/beskar) registry and is managed by the
+  shadcn CLI: do not edit it by hand. From `site/`, add or update one with
+  `npx shadcn@latest add @beskar/<name> --overwrite`. The `beskar-ui` skill is
+  in `.claude/skills`.
 - One breakpoint, 820px (`desk:`): rail above, tab bar below. 44px touch
   targets below it. Nothing only on hover.
 - Motion through `src/lib/motion.ts`: `page` and `theme` view transitions,
