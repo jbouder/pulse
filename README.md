@@ -60,7 +60,7 @@ data/
   apps/requests/<script>.csv
   summary.json            every project: words, metadata, stats, short series
   projects/<id>.json      one project's full daily history
-site/               dashboard (Vite, React 19, Tailwind 4, base-lyra, Recharts)
+site/               dashboard (Vite, React 19, Tailwind 4, Beskar base-lyra components, Recharts)
 ```
 
 ## Running it locally
