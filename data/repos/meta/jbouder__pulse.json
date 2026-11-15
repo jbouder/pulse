@@ -9,31 +9,31 @@
   {
    "name": "TypeScript",
    "color": "#3178c6",
-   "share": 0.6828
+   "share": 0.6796
   },
   {
    "name": "Python",
    "color": "#3572A5",
-   "share": 0.2567
+   "share": 0.2544
   },
   {
    "name": "CSS",
    "color": "#663399",
-   "share": 0.0544
+   "share": 0.0599
   },
   {
    "name": "HTML",
    "color": "#e34c26",
-   "share": 0.0062
+   "share": 0.0061
   }
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 26,
+ "total_commits": 28,
  "last_commit": {
-  "sha": "cad893b",
-  "date": "2026-11-13",
-  "message": "data: collect 2026-11-13"
+  "sha": "e2bc2c9",
+  "date": "2026-11-14",
+  "message": "feat(site): take the components from the Beskar registry (#3)"
  },
  "latest_release": null
 }

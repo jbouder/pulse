@@ -1,5 +1,5 @@
 {
- "description": "My Collection of Coding Agent Skills",
+ "description": "Collection of personal coding agent skills",
  "homepage": null,
  "created_at": "2026-04-14",
  "archived": false,
@@ -9,22 +9,22 @@
   {
    "name": "HTML",
    "color": "#e34c26",
-   "share": 0.5727
+   "share": 0.5615
   },
   {
    "name": "JavaScript",
    "color": "#f1e05a",
-   "share": 0.2357
+   "share": 0.2311
   },
   {
    "name": "Python",
    "color": "#3572A5",
-   "share": 0.1277
+   "share": 0.1447
   },
   {
    "name": "Shell",
    "color": "#89e051",
-   "share": 0.0632
+   "share": 0.062
   },
   {
    "name": "CSS",
@@ -34,11 +34,11 @@
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 47,
+ "total_commits": 51,
  "last_commit": {
-  "sha": "bdacd90",
-  "date": "2026-11-06",
-  "message": "feat(decision-deck): export results as a PDF of slide screenshots (#7)"
+  "sha": "fd35b80",
+  "date": "2026-11-14",
+  "message": "docs(new-project): leave the full e2e suite to CI in vibe projects (#9)"
  },
  "latest_release": null
 }

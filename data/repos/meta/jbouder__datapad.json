@@ -1,5 +1,5 @@
 {
- "description": "A private project tracker for an engineering leader",
+ "description": "Personal project tracker",
  "homepage": "https://datapad.vibeproject.workers.dev/",
  "created_at": "2026-10-24",
  "archived": false,
@@ -9,12 +9,12 @@
   {
    "name": "TypeScript",
    "color": "#3178c6",
-   "share": 0.9892
+   "share": 0.9887
   },
   {
    "name": "CSS",
    "color": "#663399",
-   "share": 0.0097
+   "share": 0.0102
   },
   {
    "name": "HTML",
@@ -24,11 +24,11 @@
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 437,
+ "total_commits": 444,
  "last_commit": {
-  "sha": "5633bd8",
-  "date": "2026-11-06",
-  "message": "Release 1.0.0 (#322)"
+  "sha": "d52b8f1",
+  "date": "2026-11-14",
+  "message": "docs: leave the full e2e suite to CI (#324)"
  },
  "latest_release": {
   "tag": "v1.0.0",

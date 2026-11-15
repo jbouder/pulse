@@ -1,5 +1,5 @@
 {
- "description": "An app designed to assist web developers in their day-to-day duties",
+ "description": "Web app designed to assist frontend developers",
  "homepage": "https://acolyte.vibeproject.workers.dev/",
  "created_at": "2025-08-01",
  "archived": false,
@@ -9,17 +9,17 @@
   {
    "name": "TypeScript",
    "color": "#3178c6",
-   "share": 0.9758
+   "share": 0.9739
   },
   {
    "name": "CSS",
    "color": "#663399",
-   "share": 0.0214
+   "share": 0.0233
   },
   {
    "name": "JavaScript",
    "color": "#f1e05a",
-   "share": 0.0029
+   "share": 0.0028
   }
  ],
  "topics": [
@@ -45,11 +45,11 @@
   "sbom"
  ],
  "default_branch": "main",
- "total_commits": 593,
+ "total_commits": 595,
  "last_commit": {
-  "sha": "1c48152",
-  "date": "2026-11-09",
-  "message": "Bump the minor-and-patch group across 1 directory with 13 updates (#225)"
+  "sha": "8fba3e5",
+  "date": "2026-11-14",
+  "message": "feat: take the components from the Beskar registry (#226)"
  },
  "latest_release": {
   "tag": "1.0.0",
