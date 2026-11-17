@@ -9,12 +9,12 @@
   {
    "name": "TypeScript",
    "color": "#3178c6",
-   "share": 0.9887
+   "share": 0.9888
   },
   {
    "name": "CSS",
    "color": "#663399",
-   "share": 0.0102
+   "share": 0.0101
   },
   {
    "name": "HTML",
@@ -24,11 +24,11 @@
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 444,
+ "total_commits": 446,
  "last_commit": {
-  "sha": "d52b8f1",
-  "date": "2026-11-14",
-  "message": "docs: leave the full e2e suite to CI (#324)"
+  "sha": "a39ba9a",
+  "date": "2026-11-17",
+  "message": "feat: default new tasks to Medium and guard unsaved inline notes (#325)"
  },
  "latest_release": {
   "tag": "v1.0.0",

@@ -45,11 +45,11 @@
   "sbom"
  ],
  "default_branch": "main",
- "total_commits": 595,
+ "total_commits": 601,
  "last_commit": {
-  "sha": "8fba3e5",
-  "date": "2026-11-14",
-  "message": "feat: take the components from the Beskar registry (#226)"
+  "sha": "0fb5685",
+  "date": "2026-11-16",
+  "message": "Bump the minor-and-patch group across 1 directory with 13 updates (#228)"
  },
  "latest_release": {
   "tag": "1.0.0",
