@@ -9,29 +9,29 @@
   {
    "name": "TypeScript",
    "color": "#3178c6",
-   "share": 0.9888
+   "share": 0.9891
   },
   {
    "name": "CSS",
    "color": "#663399",
-   "share": 0.0101
+   "share": 0.0099
   },
   {
    "name": "HTML",
    "color": "#e34c26",
-   "share": 0.0011
+   "share": 0.001
   }
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 446,
+ "total_commits": 533,
  "last_commit": {
-  "sha": "a39ba9a",
+  "sha": "40f2317",
   "date": "2026-11-17",
-  "message": "feat: default new tasks to Medium and guard unsaved inline notes (#325)"
+  "message": "chore(ci): deploy staging from a lasting staging branch (#368)"
  },
  "latest_release": {
-  "tag": "v1.0.0",
-  "date": "2026-11-06"
+  "tag": "v2.0.0",
+  "date": "2026-11-17"
  }
 }
