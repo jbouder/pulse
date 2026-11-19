@@ -9,12 +9,12 @@
   {
    "name": "TypeScript",
    "color": "#3178c6",
-   "share": 0.9891
+   "share": 0.9882
   },
   {
    "name": "CSS",
    "color": "#663399",
-   "share": 0.0099
+   "share": 0.0108
   },
   {
    "name": "HTML",
@@ -24,14 +24,14 @@
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 533,
+ "total_commits": 576,
  "last_commit": {
-  "sha": "40f2317",
-  "date": "2026-11-17",
-  "message": "chore(ci): deploy staging from a lasting staging branch (#368)"
+  "sha": "551e78e",
+  "date": "2026-11-19",
+  "message": "Release 2.1.0 (#388)"
  },
  "latest_release": {
-  "tag": "v2.0.0",
-  "date": "2026-11-17"
+  "tag": "v2.1.0",
+  "date": "2026-11-19"
  }
 }
