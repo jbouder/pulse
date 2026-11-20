@@ -9,12 +9,12 @@
   {
    "name": "TypeScript",
    "color": "#3178c6",
-   "share": 0.9882
+   "share": 0.9883
   },
   {
    "name": "CSS",
    "color": "#663399",
-   "share": 0.0108
+   "share": 0.0107
   },
   {
    "name": "HTML",
@@ -24,11 +24,11 @@
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 576,
+ "total_commits": 586,
  "last_commit": {
-  "sha": "551e78e",
-  "date": "2026-11-19",
-  "message": "Release 2.1.0 (#388)"
+  "sha": "c404f2e",
+  "date": "2026-11-20",
+  "message": "fix(today): hide the Scratch card while Scratch is empty (#392)"
  },
  "latest_release": {
   "tag": "v2.1.0",

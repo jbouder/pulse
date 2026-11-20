@@ -9,22 +9,22 @@
   {
    "name": "HTML",
    "color": "#e34c26",
-   "share": 0.4882
+   "share": 0.4834
   },
   {
    "name": "JavaScript",
    "color": "#f1e05a",
-   "share": 0.3315
+   "share": 0.3377
   },
   {
    "name": "Python",
    "color": "#3572A5",
-   "share": 0.1258
+   "share": 0.1234
   },
   {
    "name": "Shell",
    "color": "#89e051",
-   "share": 0.0539
+   "share": 0.0549
   },
   {
    "name": "CSS",
@@ -34,11 +34,11 @@
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 64,
+ "total_commits": 66,
  "last_commit": {
-  "sha": "8904428",
-  "date": "2026-11-15",
-  "message": "feat(kit-ui): restyle stock shadcn components instead of writing them (#14)"
+  "sha": "fd6a1ed",
+  "date": "2026-11-20",
+  "message": "refactor(question-deck): rename qa-deck to question-deck"
  },
  "latest_release": null
 }
