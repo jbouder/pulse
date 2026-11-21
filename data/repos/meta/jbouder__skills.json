@@ -34,11 +34,11 @@
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 66,
+ "total_commits": 69,
  "last_commit": {
-  "sha": "fd6a1ed",
+  "sha": "9759c41",
   "date": "2026-11-20",
-  "message": "refactor(question-deck): rename qa-deck to question-deck"
+  "message": "docs(pr-review): make the review body just the change count"
  },
  "latest_release": null
 }
