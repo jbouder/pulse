@@ -9,36 +9,36 @@
   {
    "name": "HTML",
    "color": "#e34c26",
-   "share": 0.4834
+   "share": 0.4567
   },
   {
    "name": "JavaScript",
    "color": "#f1e05a",
-   "share": 0.3377
+   "share": 0.319
   },
   {
    "name": "Python",
    "color": "#3572A5",
-   "share": 0.1234
+   "share": 0.1719
   },
   {
    "name": "Shell",
    "color": "#89e051",
-   "share": 0.0549
+   "share": 0.0519
   },
   {
    "name": "CSS",
    "color": "#663399",
-   "share": 0.0006
+   "share": 0.0005
   }
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 69,
+ "total_commits": 77,
  "last_commit": {
-  "sha": "9759c41",
-  "date": "2026-11-20",
-  "message": "docs(pr-review): make the review body just the change count"
+  "sha": "eb37e20",
+  "date": "2026-11-22",
+  "message": "feat(timesheet): let a one-off meeting win over a recurring overlap"
  },
  "latest_release": null
 }
