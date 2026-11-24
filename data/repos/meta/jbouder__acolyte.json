@@ -45,11 +45,11 @@
   "sbom"
  ],
  "default_branch": "main",
- "total_commits": 601,
+ "total_commits": 605,
  "last_commit": {
-  "sha": "0fb5685",
-  "date": "2026-11-16",
-  "message": "Bump the minor-and-patch group across 1 directory with 13 updates (#228)"
+  "sha": "d11c6c0",
+  "date": "2026-11-23",
+  "message": "Bump @testing-library/jest-dom from 7.0.1 to 8.0.0 (#231)"
  },
  "latest_release": {
   "tag": "1.0.0",
