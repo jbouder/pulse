@@ -24,11 +24,11 @@
  ],
  "topics": [],
  "default_branch": "main",
- "total_commits": 586,
+ "total_commits": 588,
  "last_commit": {
-  "sha": "c404f2e",
-  "date": "2026-11-20",
-  "message": "fix(today): hide the Scratch card while Scratch is empty (#392)"
+  "sha": "ef05ec1",
+  "date": "2026-11-27",
+  "message": "feat(capture): open the capture line's / menu when / is pressed (#393)"
  },
  "latest_release": {
   "tag": "v2.1.0",
